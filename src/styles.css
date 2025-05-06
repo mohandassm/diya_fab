@@ -1,0 +1,434 @@
+/* You can add global styles to this file, and also import other style files */
+/* Base styles - these will be applied to all screen sizes by default */
+
+/* Example container */
+body {
+  background-image: url(../public/images/bg_7.jpg); /* Change to your image path */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  height: auto; /* Full viewport height */
+  margin: 0; /* Removes default margin */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+
+}
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1400px; /* Max width for large screens */
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* Styles for web (larger screens) */
+  @media (min-width: 1024px) {
+    /* Web-specific styles */
+    .container {
+      padding: 40px;
+      max-width: 1200px;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  /* Styles for tablets and smaller screens */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet-specific styles */
+    .container {
+      padding: 30px;
+      max-width: 900px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  /* Styles for mobile screens */
+  @media (max-width: 767px) {
+    /* Mobile-specific styles */
+    .container {
+      padding: 15px;
+      max-width: 100%;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    /* Example: Stack elements vertically on mobile */
+    .header {
+      display: block;
+      text-align: center;
+    }
+
+    .navbar {
+      display: none; /* Hide navigation bar on mobile */
+    }
+  }
+  .nav-link{
+    color: #000 !important;
+  }
+  .nav-link:hover{
+    color: lightseagreen !important;
+  }
+  .nav-item.active .nav-link {
+    font-weight: bold;
+    color: lightseagreen !important; /* Change to your desired active color */
+    border-bottom: 2px solid lightseagreen; /* Underline effect */
+  }
+  #comp-koh1gvft {
+    width: 31px;
+    height: 31px;
+
+  }
+  .contact-container {
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-icon {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    margin-right: 8px; /* Space between icon and number */
+}
+
+.contact-link {
+    text-decoration: none; /* Removes underline */
+    color: #292929; /* Ensures text is visible */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.aboutus {
+  width: 443px;
+  height: auto;
+  line-height: 1.9em;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+.h1{
+  font-size:46px !important;
+  /* width: 440px; */
+  height: auto;
+  color: lightseagreen !important;
+}
+.moreInfo{
+  padding: 10px 30px 10px 30px;
+  color: lightseagreen;
+  border: lightseagreen 2px solid ;
+  font-weight: bold;
+  right: 30px;
+}
+.moreinfodiv{
+  margin-left: 130px;
+  margin-top: 20px;
+}
+
+.log-img{
+  width: 100%;       /* Ensures responsiveness */
+  /* height: 500px; */
+  /* Adjust the height as needed */
+  object-fit: cover; /* Ensures image maintains aspect ratio */
+}
+
+.about-img{
+  width: 100%;   /* Ensures responsiveness */
+  height: 500px;/* Adjust the height as needed */
+  object-fit: cover; /* Ensures image maintains aspect ratio */
+}
+.about-us{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.aboutus_page {
+  width: 100%;
+  height: auto;
+  line-height: 1.9em;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.WorkPhilosophy{
+  font-size:56px !important;
+  width: 440px;
+  height: auto;
+  color: lightseagreen !important;
+  align-self:center ;
+}
+
+.work-philosophy {
+  text-align: center;
+  padding: 2rem;
+}
+
+.work-philosophy h2 {
+  font-size: 2.5rem;
+  color: lightseagreen;
+  margin-bottom: 2rem;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.step {
+  max-width: 250px;
+}
+
+.step img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.step h3 {
+  color: lightseagreen;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.step p {
+  font-size: 1rem;
+  color: #333;
+}
+.carousel-inner img {
+  max-height: 300px; /* you can adjust this height */
+  object-fit: cover; /* ensures image fits nicely */
+  width: 100%; /* ensures image fills width properly */
+}
+
+.custom-carousel {
+  width: 100%;
+  padding: 3rem;
+}
+
+.carousel-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.text-section {
+  flex: 1;
+  max-width: 40%;
+  margin-left: 85px;
+}
+
+.text-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: lightseagreen;
+}
+
+.btn-outline {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid lightseagreen;
+  color: lightseagreen !important;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline:hover {
+  /* background-color: lightseagreen; */
+  color: lightseagreen;
+}
+
+
+.image-section {
+  flex: 1;
+  max-width: 50%;
+  margin-right: 120px;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem !important;
+  height: 3rem !important;
+  background-color: lightseagreen; /* Light background tint */
+  border-radius: 50%;
+}
+
+.reach-out-section {
+  /* padding: 40px 0; */
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  flex: 1 1 300px;
+  padding: 40px 20px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card.email {
+  background-color: #f0fafa;
+}
+
+.contact-card.phone {
+  background-color: #00d4e0;
+  color: #fff;
+}
+
+/* .contact-card.facebook {
+  background: url('/assets/images/office.jpg') center center/cover no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.contact-card.facebook::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.contact-card.facebook * {
+  position: relative;
+  z-index: 2;
+} */
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+a{
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+.project-info {
+  margin-bottom: 30px;
+}
+
+.carousel-inner img {
+  border-radius: 10px;
+}
+
+.contact-container-contactus {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background: #5ae4f7;
+  color: #fff;
+  min-height: 80vh;
+}
+
+.info-section {
+  width: 40%;
+}
+
+.info-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #000;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.info-item i {
+  font-size: 24px;
+  margin-right: 15px;
+  color: white;
+}
+
+.info-item h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.info-item p {
+  margin: 5px 0 0 0;
+  color: #000;
+}
+
+.form-section {
+  width: 50%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  color: #333;
+}
+
+form h3 {
+  margin-bottom: 20px;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form textarea {
+  height: 120px;
+  resize: none;
+}
+
+button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}

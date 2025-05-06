@@ -1,0 +1,165 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 justify-content-center">
+  <h1 class="h1">Projects</h1>
+</div>
+<div class="project-info text-center mb-4">
+  <h2>{{ Pollachi_title }}</h2>
+  <p>{{ Pollachi_description }}</p>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide m-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div
+      *ngFor="let img of Pollachi_images; let i = index"
+      class="carousel-item"
+      [class.active]="i === 0"
+    >
+      <img [src]="img.imageUrl" [alt]="img.altText" class="d-block w-60" style="max-height: 400px;">
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="project-info text-center mb-4">
+  <h2>{{ Vadavalli_title }}</h2>
+  <p>{{ Vadavalli_description }}</p>
+</div>
+
+<div id="carouselExampleIndicators1" class="carousel slide m-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div
+      *ngFor="let img of Vadavalli_images; let i = index"
+      class="carousel-item"
+      [class.active]="i === 0"
+    >
+      <img [src]="img.imageUrl" [alt]="img.altText" class="d-block w-60" style="max-height: 400px;">
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="project-info text-center mb-4">
+  <h2>{{ Kalapatti_title }}</h2>
+  <p>{{ Kalapatti_description }}</p>
+</div>
+
+<div id="carouselExampleIndicators2" class="carousel slide m-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div
+      *ngFor="let img of Kalapatti_images; let i = index"
+      class="carousel-item"
+      [class.active]="i === 0"
+    >
+      <img [src]="img.imageUrl" [alt]="img.altText" class="d-block w-60" style="max-height: 400px;">
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="project-info text-center mb-4">
+  <h2>{{ Hopes_title }}</h2>
+  <p>{{ Hopes_description }}</p>
+</div>
+
+<div id="carouselExampleIndicators3" class="carousel slide m-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div
+      *ngFor="let img of Hopes_images; let i = index"
+      class="carousel-item"
+      [class.active]="i === 0"
+    >
+      <img [src]="img.imageUrl" [alt]="img.altText" class="d-block w-60" style="max-height: 400px;">
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="project-info text-center mb-4">
+  <h2>{{  Cheran_ma_Nagar_title }}</h2>
+  <p>{{ Cheran_ma_Nagar_description }}</p>
+</div>
+
+<div id="carouselExampleIndicators4" class="carousel slide m-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div
+      *ngFor="let img of  Cheran_ma_Nagar_images; let i = index"
+      class="carousel-item"
+      [class.active]="i === 0"
+    >
+      <img [src]="img.imageUrl" [alt]="img.altText" class="d-block w-60" style="max-height: 400px;">
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="project-info text-center mb-4">
+  <h2>{{ Bodipalayam_title }}</h2>
+  <p>{{ Bodipalayam_description }}</p>
+</div>
+
+<div id="carouselExampleIndicators5" class="carousel slide m-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div
+      *ngFor="let img of  Bodipalayam_images; let i = index"
+      class="carousel-item"
+      [class.active]="i === 0"
+    >
+      <img [src]="img.imageUrl" [alt]="img.altText" class="d-block w-60" style="max-height: 400px;">
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+

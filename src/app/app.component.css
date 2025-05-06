@@ -1,0 +1,11 @@
+/* Use the same CSS code as above */
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1400px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }

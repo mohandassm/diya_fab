@@ -1,0 +1,85 @@
+<div id="carouselExampleIndicators" class="carousel slide custom-carousel" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div
+      *ngFor="let slide of slides; let i = index"
+      class="carousel-item"
+      [class.active]="i === 0"
+    >
+      <div class="carousel-content">
+        <div class="text-section">
+          <h2 [innerHTML]="slide.title"></h2>
+        </div>
+        <div class="image-section">
+          <img [src]="slide.imageUrl" [alt]="slide.altText" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center p-5">
+    <a [routerLink]="'/projects'" class="btn-outline">More Info</a>
+  </div>
+
+</div>
+  <!-- Carousel Controls (Arrows) -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+
+
+<div class="row align-items-center min-vh-100">
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-5">
+    <img src="images/img_4.jpg" alt="img4" class="about-img">
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center p-5">
+    <h1 class="h1">About Us</h1>
+    <p class="aboutus">
+      Diya Fabrication is the leading fabrication company in Coimbatore, specializing in high-quality metal works. Our clients recognize our commitment to delivering top-notch craftsmanship on schedule and within budget. We take pride in offering a wide range of fabrication services, including all types of gates, grills, sheds, window grills, roofs, hand railings, and more.
+      With a focus on durability, precision, and innovative designs, we ensure that every project meets the highest standards. Whether for residential, commercial, or industrial needs, Diya Fabrication is your trusted partner for superior metal fabrication solutions.
+    </p>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 moreinfodiv">
+      <span class="moreInfo" [routerLink]="'/aboutus'">
+        More Info
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- Adjust the height for proper spacing -->
+<div class="row">
+  <h1 class="h1 text-center w-100">Reach Out to Us</h1>
+  <section class="reach-out-section ">
+    <div class="contact-cards">
+      <div class="contact-card email">
+        <i class="icon fas fa-paper-plane"></i>
+        <a [href]="'mailto:' + email + '?subject=WebEnquiry'">
+          <p><em>{{ email }}</em></p>
+        </a>
+      </div>
+      <div class="contact-card phone">
+        <i class="icon fas fa-mobile-alt"></i>
+        <a href="https://wa.me/916379859623?text=Hi">
+          <p><em>+91 637 985 9623</em></p>
+        </a>
+        <a href="https://wa.me/918778657597?text=Hi">
+          <p><em>+91 877 865 7597</em></p>
+        </a>
+      </div>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4341233518004!2d76.9540745!3d10.9579614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85b0be31ecc31%3A0xb9aae730a5d240d1!2sDIYA+FABRICATION!5e0!3m2!1sen!2sin!4v1615583254321!5m2!1sen!2sin"
+      width="100%"
+      height="350"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+
+
+  </section>
+</div>
+
